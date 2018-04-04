@@ -16,7 +16,7 @@ const errorHandler = function errorHandler(err, req, res, next) {
     return next(err);
   }
   res.status(500);
-  res.render('error', { error: err });
+  res.send({ error: 'Something went wrong!' });
 };
 
 module.exports = {
