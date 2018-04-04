@@ -1,0 +1,25 @@
+{
+  "name": "crypto-charting-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tremarkley/crypto-charting-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tremarkley/crypto-charting-tool/issues"
+  },
+  "homepage": "https://github.com/tremarkley/crypto-charting-tool#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "webpack": "^4.5.0"
+  }
+}
