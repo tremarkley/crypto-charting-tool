@@ -1,14 +1,10 @@
 const express = require('express');
-const bodyparser = require('body-parser');
 const { getPricesBetweenDates } = require('../controllers/coinDeskAPI');
 
 const router = express.Router();
 
-router.use(bodyparser.json());
-router.use(bodyparser.urlencoded({ extended: false }));
-
 router.get('/historical', async (req, res, next) => {
-  const query = req.body;
+  const { query } = req;
   try {
     const prices = await getPricesBetweenDates(query);
     res.send(prices);
@@ -16,3 +12,5 @@ router.get('/historical', async (req, res, next) => {
     next(error);
   }
 });
+
+module.exports = router;
